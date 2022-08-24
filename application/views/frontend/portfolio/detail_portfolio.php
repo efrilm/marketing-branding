@@ -34,7 +34,7 @@
                 <div class="col-xl-6">
                     <div class="text-block  project-box-pad bg-primary tc-light h-full">
                         <h2><?= $portfolio->portfolio_name ?></h2>
-                        <p><?= $portfolio->description ?>.</p>
+                        <p><?php echo $portfolio->description ?>.</p>
                     </div>
                 </div><!-- .col -->
             </div><!-- .row -->

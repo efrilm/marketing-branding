@@ -74,7 +74,7 @@
                     <div class="col">
                         <label class="form-label"><?= mblang('Description') ?> </label>
                         <small class="text-danger m-b-md"><?= form_error('description') ?></small>
-                        <textarea id="summernote" type="text" name="description" value="<?= set_value('description') ?> "><?= $port->description ?></textarea>
+                        <textarea class="form-control" type="text" name="description" value="<?= set_value('description') ?> "><?= $port->description ?></textarea>
                     </div>
                 </div>
                 <div class=" row">

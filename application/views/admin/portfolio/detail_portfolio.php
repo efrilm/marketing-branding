@@ -91,6 +91,16 @@
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <?= mblang('Description') ?>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <?= $port->description ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>
