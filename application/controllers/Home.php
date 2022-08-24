@@ -33,6 +33,7 @@ class Home extends CI_Controller
     $this->data['category'] =  $this->category->getCategoryAll()->result();
     $this->data['portfolio'] =  $this->portfolio->getPortfolioAll()->result();
     $this->data['bg'] = $this->background->getBackground();
+    $this->data['company'] = $this->client->getCompanyAll()->result();
     $this->template->load('frontend/template', 'frontend/home/index', $this->data);
   }
 }

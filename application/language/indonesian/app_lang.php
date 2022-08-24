@@ -171,3 +171,4 @@ $lang['Culture'] = 'Budaya';
 $lang['OUR SERVICES'] = 'Layanan Kami';
 $lang['We help Clients Create Joyful Digital Experiences'] = 'Kami membantu Klien Menciptakan Pengalaman Digital yang Menyenangkan';
 $lang['Some highlights of work we\'ve done for forward thinking clients'] = 'Beberapa sorotan dari pekerjaan yang telah kami lakukan untuk klien yang berpikiran maju';
+$lang['Lets’s Work Together'] = 'Mari Bekerja Sama';

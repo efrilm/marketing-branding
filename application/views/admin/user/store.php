@@ -47,9 +47,9 @@
             <div class="logo">
                 <a href="<?= base_url() ?>">MarketingBranding</a>
             </div>
-            <p class="auth-description"><?= mblang("Please enter your credentials to create an account") ?>.<br><?= mblang("Already have an account") ?>? <a href="<?= base_url("administration/sign-in") ?>"><?= mblang("Sign In") ?></a></p>
+            <p class="auth-description"><?= mblang("Please enter your credentials to create an account") ?></p>
 
-            <?= form_open("administration/sign-up") ?>
+            <?= form_open("administration/add-user") ?>
             <div class="auth-credentials m-b-xxl">
                 <div class="row">
                     <div class="col-md-6">
@@ -88,7 +88,7 @@
             </div>
 
             <div class="auth-submit">
-                <button type="submit" class="btn btn-primary"><?= mblang("Sign Up") ?></button>
+                <button type="submit" class="btn btn-primary"><?= mblang("Add") ?></button>
             </div>
             <?= form_close() ?>
         </div>

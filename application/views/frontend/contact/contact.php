@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="banner-content">
-                        <h1 class="banner-heading">Lets’s Work Together</h1>
+                        <h1 class="banner-heading"><?= mblang('Lets’s Work Together') ?></h1>
                     </div>
                 </div>
             </div>
@@ -39,19 +39,19 @@
                         <li>
                             <em class="contact-icon ti-mobile"></em>
                             <div class="conatct-content">
-                                <a href="tel:19173303116">+1 917 330 3116</a>
+                                <a href="tel:<?= $config->no_whatsapp ?>"><?= $config->no_whatsapp ?></a>
                             </div>
                         </li>
                         <li>
-                            <em class="contact-icon ti-email"></em>
+                            <em class=" contact-icon ti-email"></em>
                             <div class="conatct-content">
-                                <a href="mailto:hello@this.work.com">hello@this.work.com</a>
+                                <a href="mailto:hello@this.work.com"><?= $config->email ?></a>
                             </div>
                         </li>
                         <li>
                             <em class="contact-icon ti-map-alt"></em>
                             <div class="conatct-content">
-                                <a href="#">Get Directions</a>
+                                <a href="#"><?= $config->address ?></a>
                             </div>
                         </li>
                     </ul>

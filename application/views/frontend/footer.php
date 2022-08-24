@@ -7,7 +7,7 @@
                     <div class="wgs-content">
                         <div class="wgs-logo">
                             <a href="./">
-                                <img src="images/logo-white.png" srcset="images/logo-white2x.png" alt="logo">
+                                <img src="<?= base_url('assets/images/logo/' . $config->logo) ?>" srcset="<?= base_url('assets/images/logo/' . $config->logo) ?>" alt="logo">
                             </a>
                         </div>
                         <p>&copy; 2022. All rights reserved.</p>
@@ -19,9 +19,8 @@
                     <div class="wgs-content">
                         <h3 class="wgs-title"><?= mblang('Company') ?></h3>
                         <ul class="wgs-menu">
-                            <li><a href="dallas-about.html"><?= mblang('About') ?></a></li>
-                            <li><a href="texas-about.html"><?= mblang('Contact') ?></a></li>
-                            <li><a href="dallas-team.html"><?= mblang('Blog') ?></a></li>
+                            <li><a href="<?= base_url('about') ?>"><?= mblang('About') ?></a></li>
+                            <li><a href="<?= base_url('contact') ?>"><?= mblang('Contact') ?></a></li>
                         </ul>
                     </div>
                 </div><!-- .wgs -->

@@ -6,7 +6,7 @@
                   <!-- Logo  -->
                   <div class="header-logo logo">
                       <a href="./" class="logo-link">
-                          <img class="logo-white" src="<?= base_url('assets/images/logo/blackLogo.png') ?>" width="70" alt="logo">
+                          <img class="logo-white" src="<?= base_url('assets/images/logo/' . $config->logo) ?>" width="70" alt="logo">
                       </a>
                   </div>
 
@@ -58,7 +58,6 @@
                               <li class="menu-item"><a class="menu-link nav-link <?php if ($this->uri->segment(1) == 'contact') {
                                                                                         echo 'active';
                                                                                     } ?>" href="<?= base_url('contact') ?>"><?= mblang('Contact') ?></a></li>
-                              <li class="menu-item"><a class="menu-link nav-link" href="dallas-work.html"><?= mblang('Blog') ?></a></li>
                           </ul>
                       </nav>
                   </div><!-- .header-navbar -->

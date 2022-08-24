@@ -10,7 +10,8 @@ $route['translate_uri_dashes'] = FALSE;
 
 // Auth
 $route['administration/sign-in'] = 'admin/auth/signIn';
-$route['administration/sign-up'] = 'admin/auth/signUp';
+$route['administration/add-user'] = 'admin/user/addUser';
+$route['administration/users'] = 'admin/user';
 
 // Web Config 
 $route['administration/web-configuration'] = 'admin/config/index';
@@ -55,6 +56,9 @@ $route['administration/edit-bg-service-feature'] = 'admin/background/index/editB
 $route['administration/edit-bg-portfolio'] = 'admin/background/index/editBgPortfolio';
 $route['administration/edit-bg-about'] = 'admin/background/index/editBgAbout';
 $route['administration/edit-bg-contact'] = 'admin/background/index/editBgContact';
+
+
+
 
 // end admin //
 

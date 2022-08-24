@@ -266,7 +266,7 @@
                     <div class="col-12">
                         <div class="d-lg-flex text-center text-lg-left align-items-center justify-content-between">
                             <h2 class="fw-4"><?= mblang('Want to see our more creative work') ?>?</h2>
-                            <a href="dallas-work.html" class="btn btn-sm"><?= mblang('See All Work') ?></a>
+                            <a href="<?= base_url('portfolio') ?>" class="btn btn-sm"><?= mblang('See All Work') ?></a>
                         </div>
                     </div>
                 </div>
@@ -276,137 +276,19 @@
 </div>
 <!-- .section -->
 
-<!-- section -->
-<div class="section section-x">
-    <div class="container">
-        <div class="row justify-content-center ">
-            <div class="col-lg-8 text-center">
-                <div class="section-head section-md">
-                    <h5 class="heading-xs dash dash-both">Testimonial</h5>
-                    <h2>What clients say about Genox</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="tes-s1">
-                    <div class="has-carousel" data-items="1" data-loop="true" data-dots="true" data-auto="true" data-navs="true">
-                        <div class="tes-item">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="tes-thumb">
-                                        <div class="bg-image">
-                                            <img src="images/clients-a.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div><!-- .col -->
-                                <div class="col-md-7">
-                                    <div class="tes-block tc-light bg-primary">
-                                        <div class="tes-content">
-                                            <p class="tes-title u-cap"><strong>They are great agency</strong> </p>
-                                            <p class="lead">I recently hired Genox to develop a new version of my most popular website and I’m extremely happy with their work. </p>
-                                        </div>
-                                        <div class="author-con">
-                                            <h6 class="author-name t-u">Mike Andrew</h6>
-                                            <p>CEO - Philandropia</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- .tes-item -->
-                        <div class="tes-item">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="tes-thumb">
-                                        <div class="bg-image">
-                                            <img src="images/clients-b.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div><!-- .col -->
-                                <div class="col-md-7">
-                                    <div class="tes-block tc-light bg-primary">
-                                        <div class="tes-content">
-                                            <p class="tes-title u-cap"><strong>They are great agency</strong> </p>
-                                            <p class="lead">We love working with Genox Not only do they create beautiful, interactive but they are also extremely helpful and amazing.</p>
-                                        </div>
-                                        <div class="author-con">
-                                            <h6 class="author-name t-u">MARINA SHOVA</h6>
-                                            <p>CEO - Art policy</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- .tes-item -->
-                        <div class="tes-item">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="tes-thumb">
-                                        <div class="bg-image">
-                                            <img src="images/clients-c.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div><!-- .col -->
-                                <div class="col-md-7">
-                                    <div class="tes-block tc-light bg-primary">
-                                        <div class="tes-content">
-                                            <p class="tes-title u-cap"><strong>They are great agency</strong> </p>
-                                            <p class="lead">These guys are legit. I’ll never hire another agency as long as I’m working. They are also extremely helpful and amazing.</p>
-                                        </div>
-                                        <div class="author-con">
-                                            <h6 class="author-name t-u">HYPER MACK</h6>
-                                            <p>CEO - Hellozen Bulk</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- .tes-item -->
-                    </div>
-                    <div class="tes-arrow">
-                        <a class='slick-prev slick-arrow'><i class='icon ti ti-angle-left'></i></a>
-                        <a class='slick-next slick-arrow'><i class='icon ti ti-angle-right'></i></a>
-                    </div>
-                </div>
-            </div>
-        </div><!-- .row -->
-    </div>
-</div>
-<!-- .section -->
-
-
 <!-- logo -->
 <div class="section section-logo">
     <div class="container">
         <div class="row justify-content-center justify-content-md-between gutter-vr-30px">
-            <div class="col-sm-3 col-md-2 col-5">
-                <div class="logo-item">
-                    <img src="images/client-a.png" alt="">
-                </div>
-            </div><!-- .col -->
-            <div class="col-sm-3 col-md-2 col-5">
-                <div class="logo-item">
-                    <img src="images/client-b.png" alt="">
-                </div>
-            </div><!-- .col -->
-            <div class="col-sm-3 col-md-2 col-5">
-                <div class="logo-item">
-                    <img src="images/client-c.png" alt="">
-                </div>
-            </div><!-- .col -->
-            <div class="col-sm-3 col-md-2 col-5">
-                <div class="logo-item">
-                    <img src="images/client-d.png" alt="">
-                </div>
-            </div><!-- .col -->
-            <div class="col-sm-3 col-md-2 col-5">
-                <div class="logo-item">
-                    <img src="images/client-e.png" alt="">
-                </div>
-            </div><!-- .col -->
+            <?php foreach ($company as $key => $value) { ?>
+                <div class="col-sm-3 col-md-2 col-5">
+                    <div class="logo-item">
+                        <img src="<?= base_url('assets/images/company/' . $value->company_logo) ?>" alt="">
+                    </div>
+                </div><!-- .col -->
+            <?php } ?>
+
         </div><!-- .row -->
     </div><!-- .container -->
 </div>
 <!-- .logo -->
-
-<!-- section / cta -->
-<?php $this->load->view("frontend/utilities/cta"); ?>
-<!-- .section-cta -->

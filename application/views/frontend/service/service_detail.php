@@ -5,7 +5,7 @@
                 <div class="col-xl-6">
                     <div class="banner-content">
                         <h1 class="banner-heading"><?= $service->service_name ?></h1>
-                        <a href="dallas-contact.html" class="btn">Whatsapp</a>
+                        <a href="https://wa.me/<?= $config->no_whatsapp ?>" class="btn">Whatsapp</a>
                     </div>
                 </div>
             </div>

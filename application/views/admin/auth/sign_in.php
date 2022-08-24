@@ -49,7 +49,7 @@
             <div class="logo">
                 <a href="<?= base_url() ?>">MarketingBranding</a>
             </div>
-            <p class="auth-description"><?= mblang('Please sign-in to your account and continue to the dashboard') ?>.<br><?= mblang('Don\'t have an account') ?>? <a href="<?= base_url('administration/sign-up') ?>"><?= mblang('Sign Up') ?></a></p>
+            <p class="auth-description"><?= mblang('Please sign-in to your account and continue to the dashboard') ?>.</p>
 
             <div class="auth-credentials m-b-xxl">
                 <label class="form-label"><?= mblang('Email') ?></label>

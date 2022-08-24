@@ -56,6 +56,11 @@
                <li class="sidebar-title">
                    <?= mblang('Users') ?>
                </li>
+               <li class="<?php if ($this->uri->segment(2) == 'users') {
+                                echo 'active-page';
+                            } ?>">
+                   <a href="<?= base_url('administration/users') ?>" class="active"><i class="material-icons-two-tone">category</i><?= mblang('Administration') ?></a>
+               </li>
                <li class="sidebar-title">
                    <?= mblang('Configuration') ?>
                </li>

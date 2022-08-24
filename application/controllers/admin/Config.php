@@ -71,7 +71,7 @@ class Config extends CI_Controller
 
     if ($this->form_validation->run() == FALSE) {
       $this->data['title'] = mblang('Website Configuration');
-      $this->data['config'] = $this->config_model->getWebConfig()->row();
+      $this->data['config'] = $this->config_model->getWebConfig();
       $this->template->load('admin/template', 'admin/web_config/web_config', $this->data);
     } else {
       $data = [
